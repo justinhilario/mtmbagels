@@ -1,29 +1,35 @@
 import React from "react";
 import styled from "styled-components";
+import { StaticImage } from "gatsby-plugin-image"
+
 
 import MainCTA from "./MainCTA";
 
 const text = {
-    name: "Justin Hilario",
-    subtitle: "Full-stack engineer and creative. Driven by the love of collaboration to build engaging full-stack web experiences through the lens of a creative background.",
-    ctaText: "View Resume"
+    name: "MEANT TO MAKE BAGELS",
+    subtitle: "A bagel moment in San Diego. Boiled then baked bagels. Plant-based schmear 🌱",
+    ctaText: "Follow Us"
 }
 
 const Hero = () => {
     return (
     <>
-     <MainTitle>{text.name}</MainTitle>
-     <SubTitle>{text.subtitle}</SubTitle>
-     <CtaLink href="https://www.google.com/">
-      <MainCTA>{text.ctaText}</MainCTA>
-     </CtaLink>
+    <HeroWrapper>
+      <MainTitle>{text.name}</MainTitle>
+      <SubTitle>{text.subtitle}</SubTitle>
+      <CtaLink href="https://www.instagram.com/meanttomakebagels/"/>
+      <StaticImage src="../images/HeroImage.jpeg" alt="Bagel Background" />
+    </HeroWrapper>
     </>
     )
   }
 
+const HeroWrapper= styled.div`
+`
+
 const MainTitle = styled.h1`
   font-size: 44px;
-  color: rgb(38, 38, 38);
+  color: #6B8F71;
   font-weight: 700;
   line-height: 48px;
   text-align: center;
@@ -38,7 +44,7 @@ const SubTitle = styled.h2`
     text-align: center;
     max-width: 720px;
     margin:0 auto;
-    color: rgb(92, 92, 92);
+    color: #6B8F71;
     letter-spacing: normal;
     font-family: Helvetica Neue;
     -webkit-font-smoothing: initial;

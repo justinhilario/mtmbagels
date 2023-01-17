@@ -12,7 +12,7 @@ const MainCTA = () => {
 
 const PrimaryButton = styled.div`
     border-radius: 6px;
-    padding: 12px 24px;
+    padding: 12px 12px;
     transform: translate3d(0px, 0px, 0px);
     position: relative;
     font-family: Helvetica Neue;
@@ -21,8 +21,9 @@ const PrimaryButton = styled.div`
     line-height: 24px;
     white-space: nowrap;
     cursor: pointer;
-    background: #3c5b97;
+    background: #407570;
     font-color: white;
     font-size: 16px;
+    border-radius: 50%;
 `
 export default MainCTA
